@@ -1,0 +1,109 @@
+﻿
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+@section StylesDataTables{
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/2.3.3/css/buttons.dataTables.min.css" />
+}
+
+    @section Scripts{
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js" defer></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/pdfmake.min.js" defer></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/vfs_fonts.js" defer></script>
+    <script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js" defer></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/buttons/2.3.3/js/dataTables.buttons.min.js" defer></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/buttons/2.3.3/js/buttons.colVis.min.js" defer></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/buttons/2.3.3/js/buttons.html5.min.js" defer></script>
+    <script src="~/js/division.js" defer></script>
+    <script src=""></script>
+
+}
+
+
+<h1>Index</h1>
+
+<p>
+        <a class="btn btn-success" asp-action="Create">Create New</a>
+</p>
+
+
+    <table id="divisionTable" class="display table">
+        <thead class="table-dark text-light">
+            <tr>
+                <th>Division Name</th>
+                <th>Actions</th>
+
+            </tr>
+        </thead>
+        <tbody class="table-striped">
+        </tbody>
+
+    </table>
+
+
+
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="divisionEditModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div id="modalEdit" class="modal-body">
+                    <!-- Isi modal -->
+                    <h1>Edit</h1>
+                    <h4>Departement</h4>
+                    <hr />
+
+                    <form>
+                        <div class="text-danger"></div>
+
+                        <div class="form-group">
+                            <label for="divisionNameInput" class="control-label">Name</label>
+                            <input id="divisionNameInput" name="divisionName" class="form-control" />
+
+                        </div>
+                        <div class="form-group mt-2">
+                        </div>
+                    </form>
+
+                    <!-- /Isi modal -->
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary" >Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="divisionDetailsModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Detail Departement</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div id="modalDetail" class="modal-body container">
+                    <!-- Isi modal -->
+                    <!-- /Isi modal -->
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+  

@@ -1,0 +1,34 @@
+﻿@{
+    Layout = "_AuthenticationLayout";
+}
+
+<h1>Register Form</h1>
+
+<h4>Create your new account</h4>
+<hr />
+
+        <form asp-action="Register">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label class="control-label"> Enter Full Name</label>
+                <input name="fullname" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label class="control-label"> Enter Birth Date</label>
+                <input type="date" name="birthdate" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label class="control-label"> Enter Email</label>
+                <input name="email" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label class="control-label"> Enter Password</label>
+                <input type="password" name="password" class="form-control" />
+            </div>
+           
+   
+            <div class="form-group mt-3">
+                <input type="submit" value="Register" class="btn btn-primary" />
+            </div>
+        </form>
+

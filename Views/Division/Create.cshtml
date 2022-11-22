@@ -1,0 +1,47 @@
+﻿@{
+    ViewData["Title"] = "Create";
+}
+
+@section Scripts{
+    <script src="~/js/divisionCreate.js"></script>
+}
+
+    <h1>Create</h1>
+
+    <h4>Division</h4>
+    <hr />
+    <div class="row">
+        <div class="col-md-4">
+            <form class="needs-validation" novalidate>
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label for="divisionName" class="control-label">Name</label>
+                    <div class="input-group has-validation">
+                        <input id="divisionName" name="divisionName" class="form-control" required />
+                        <div class="valid-feedback">
+                            Looks Good
+                        </div>
+                        <div class="invalid-feedback">
+                            Please insert division name!
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Create" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+
+    <div>
+        <a asp-action="Index">Back to List</a>
+    </div>
+
+    @*@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}*@
