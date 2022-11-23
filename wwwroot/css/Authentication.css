@@ -1,0 +1,8 @@
+body{
+    background: url("https://images.pexels.com/photos/552784/pexels-photo-552784.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"), rgba(0,0,0,0.6) ;
+    background-blend-mode: multiply
+}
+
+body > .container > .row{
+    height: 100vh;
+}

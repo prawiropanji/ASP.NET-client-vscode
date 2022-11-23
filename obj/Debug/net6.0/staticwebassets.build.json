@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "2/ppQSx+14y4MOz/gLb6aiSgjoLZAeHB+Owibce/Aic=",
+  "Hash": "P7OcRJ6quX6WvhxNX8lyMPchZELC7uA0Y45sk5cWxa4=",
   "Source": "WebApplicationClient",
   "BasePath": "_content/WebApplicationClient",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\panji\\Documents\\panji\\MCC\\4-front-end\\WebAppClient\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\WebApplicationClient.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\panji\\Documents\\panji\\MCC\\4-front-end\\WebAppClient\\wwwroot\\css\\Authentication.css",
+      "SourceId": "WebApplicationClient",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\panji\\Documents\\panji\\MCC\\4-front-end\\WebAppClient\\wwwroot\\",
+      "BasePath": "_content/WebApplicationClient",
+      "RelativePath": "css/Authentication.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Authentication.css"
     },
     {
       "Identity": "C:\\Users\\panji\\Documents\\panji\\MCC\\4-front-end\\WebAppClient\\wwwroot\\css\\CustomBS.css",
@@ -134,6 +151,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\Alert.js"
+    },
+    {
+      "Identity": "C:\\Users\\panji\\Documents\\panji\\MCC\\4-front-end\\WebAppClient\\wwwroot\\js\\chart.js",
+      "SourceId": "WebApplicationClient",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\panji\\Documents\\panji\\MCC\\4-front-end\\WebAppClient\\wwwroot\\",
+      "BasePath": "_content/WebApplicationClient",
+      "RelativePath": "js/chart.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\chart.js"
     },
     {
       "Identity": "C:\\Users\\panji\\Documents\\panji\\MCC\\4-front-end\\WebAppClient\\wwwroot\\js\\departement.js",

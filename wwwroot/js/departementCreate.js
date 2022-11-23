@@ -79,7 +79,7 @@ document.querySelector('form').addEventListener('submit', (event) => {
                 data: JSON.stringify(data)
             }).done(res => {
                 console.log(res);
-                //formElement.reset();
+                formElement.reset();
                 //document.querySelector('#closeModal').reset();
 
 

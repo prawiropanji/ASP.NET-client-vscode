@@ -56,6 +56,130 @@ $.ajax({
           chart.render();
 
 })
+
+
+
+$.ajax({
+  url: 'https://localhost:7002/api/Departement',
+  method: 'GET',
+  dataType: 'json'
+}).done(res => {
+  console.log(res)
+
+
+
+  let divisionCountArray = []  
+
+  res.data.forEach(departement => {
+    
+    let found = divisionCountArray.find(elementDivCount => {
+  
+          return elementDivCount.divisionId == departement.divisionId
+    })
+
+
+    if(found){
+      found.count += 1
+    }else{
+      divisionCountArray.push({divisionId: departement.divisionId, count:1})
+    }
+
+    
+  })
+
+
+  let result = divisionCountArray.map(element => {
+    // console.log(element)
+    let newForm = {division: null, count:element.count}
+
+    $.ajax({
+      url: `https://localhost:7002/api/Division/${element.divisionId}`,
+      method: 'GET',
+      async: false,
+      dataType: 'json'
+
+    }).done(res => {
+      newForm.division = res.data.name  
+    })
+
+    return newForm
+  })
+
+ 
+
+
+
+    //   let setDivisionId = new Set()
+
+ 
+
+  // res.data.forEach(departemenet => {
+    
+  //   setDivisionId.add(departemenet.divisionId)
+    
+  // })
+
+
+  
+
+  // let ArrayDivisionId = [...setDivisionId]
+
+  // console.log(ArrayDivisionId)
+
+
+
+  // console.log(result)
+
+  let labels = result.map(element => element.division)
+
+  let series = result.map(element => element.count)
+
+
+
+  var options = {
+    series: series,
+    labels: labels,
+    chart: {
+    type: 'donut',
+  },
+  responsive: [{
+    breakpoint: 480,
+    options: {
+      chart: {
+        width: 200
+      },
+      legend: {
+        position: 'bottom'
+      }
+    }
+  }]
+  };
+  
+  var pieChart = new ApexCharts(document.querySelector("#pieChart"), options);
+  pieChart.render()
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+
+
+})
+
+
+
+
+
+
+
         
 
         
